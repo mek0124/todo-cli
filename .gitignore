@@ -1,3 +1,5 @@
 __pycache__/
 __init__.py
 user.json
+dist/
+todo_cli.egg-info
