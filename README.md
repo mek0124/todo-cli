@@ -44,6 +44,8 @@ Welcome to Todo CLI (Click Version). This is a simple cli application for keep t
   - Example:
     - <code>todo list 3</code>
 
+![plot](./usage.png)
+
 
 ## Issues
 
