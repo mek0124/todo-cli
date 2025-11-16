@@ -7,7 +7,6 @@ json_controller = JsonController()
 @click.command()
 @click.option("--item_id", type=int, help="Filter items by specific ID")
 def list(item_id):
-    """List all todo items or filter by specific ID"""
     all_items = json_controller.get_todo_items()
 
     if not all_items:

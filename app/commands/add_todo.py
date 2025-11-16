@@ -1,13 +1,9 @@
 from app.models.todo import TodoItemCreate, TodoItem
 from app.controllers.json import JsonController
-
 from datetime import datetime
-
 import click
 
-
 json_controller = JsonController()
-
 
 @click.command()
 @click.argument('title')
@@ -16,8 +12,13 @@ json_controller = JsonController()
 def add(title: str, details: str, priority: int):
     current_todos = json_controller.get_todo_items()
     
+    if current_todos:
+        next_id = max(item["item_id"] for item in current_todos) + 1
+    else:
+        next_id = 1
+
     new_todo_item = TodoItemCreate(
-        item_id = len(current_todos) + 1,
+        item_id = next_id,
         title = title,
         details = details,
         priority = priority,

@@ -1,10 +1,7 @@
 from app.controllers.json import JsonController
-
 import click
 
-
 json_controller = JsonController()
-
 
 @click.command()
 @click.argument('item_id')

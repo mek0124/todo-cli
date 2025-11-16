@@ -1,11 +1,8 @@
 from typing import List
-
 from app.models.todo import TodoItem
-from app.models.user import UserCreate
-
+from app.models.todo import TodoItem, TodoItemBase, TodoItemCreate
 import json
 import os
-
 
 class JsonController:
     def build_path(self, file_name: str):
