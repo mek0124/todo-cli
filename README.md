@@ -19,17 +19,17 @@ Welcome to Todo CLI (Click Version). This is a simple cli application for keep t
 > NOTE: When using more than one word for the title or details, ensure to wrap them in "quotes" otherwise the program will only register the first word and error out on the rest
 
 - Creating A New ToDo Item
-  - <code>4 add "title" "details" priority_number</code>
+  - <code>todo add "title" "details" priority_number</code>
   - Example:
     - <code>todo add "Some Test Title" "Some Other Details" 3</code>
 
 - Editing A New ToDo Item
   |prefix|command|item_id: integer|argument/option|information|
   |-|-|-|-|-|
-  |todo|edit|1|--title|following the flag --title, enter your new title surrounded by "quotes"|
-  ||||--details|following the flag --details, enter your new details surrounded by "quotes"|
-  ||||--priority|following the flag --priority, enter the new number for the priority level 1-3|
-  ||||--is_completed|following the flag --is_completed, eneter either True or False for completion status|
+  |todo|edit|1|--title|the updated title of the task item |
+  ||||--details|the updated details of the task item|
+  ||||--priority|the updated priority level of 1, 2, or 3|
+  ||||--is_completed|the updated completion status of the task itm|
 
 - Deleting A ToDo Item
   - <code>todo delete item_id</code>
@@ -55,9 +55,13 @@ If at any time you come into any issues with the code, please go to [the issues 
 
 Anyone is welcome to contribute to the application.
 
+**___ALL CONTRIBUTORS ARE REQUIRED TO FORK THE REPO AND PUSH TO YOUR FORK!___**
+for more information on this, please join the discord server
+
 Rules:
   - No Malicious Code
   - No Spaghetti Code
+  - No AI Code unless verified first!
   - If you're apart of the discord server, do include your discord username in your forked commit to allow for easier communication
 
 Instructions:
